@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <div>
     <h1>PRESS TO TURN ON/OFF THE LIGHT</h1>
-    <button id="btn1">ON THE BUTTON</button>
-    <img src=""/>
-    <button id="btn2">OFF THE BUTTON</button>
+    <button id="btn1" class="btn">TURN ON BULB</button>
+    <img src="OFF_img.jpeg" id="myimg"/>
+    <button id="btn2" class="btn">TURN OFF BULB</button>
+</div>
 </body>
 </html>
+<script>
+    const btn1=document.getElementById("btn1");
+    const btn2=document.getElementById("btn2");
+    const imgg=document.getElementById("myimg")
+    btn1.addEventListener("click",()=>{ imgg.src="ON_img.jpeg"; });
+    btn2.addEventListener("click",()=>{ imgg.src="OFF_img.jpeg"; });
+    </script>
